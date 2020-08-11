@@ -44,5 +44,8 @@ if len(matches)> 0:
 	print('copied to clipboard: ')
 	print('\n'.join(matches))
 
+	emailPhoneFile = open('emailandPhone.txt', 'w')
+	emailPhoneFile.write('\n'.join(matches))
+
 else: 
 	print('no phone number or email address found')
